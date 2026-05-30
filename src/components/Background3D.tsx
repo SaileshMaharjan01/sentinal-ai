@@ -19,14 +19,14 @@ export default function Background3D() {
     <div className="fixed inset-0 z-0 select-none pointer-events-none">
       <div className="absolute inset-0 pointer-events-auto">
         <Suspense fallback={<SplineFallback />}>
-          <Spline 
-            scene="https://prod.spline.design/Slk6b8kz3LRlKiyk/scene.splinecode" 
+          <Spline
+            scene="https://prod.spline.design/Slk6b8kz3LRlKiyk/scene.splinecode"
             className="w-full h-full"
           />
         </Suspense>
       </div>
       {/* Subtle high-contrast radial dark background overlay for high readability */}
-      <div className="absolute inset-0 bg-black/60 z-[1] pointer-events-none" />
+      <div className="absolute inset-0 bg-black/60 z-1 pointer-events-none" />
     </div>
   );
 }

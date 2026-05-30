@@ -1,26 +1,20 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import React, { useState } from "react";
-import { ActivePage } from "./types";
-import Navbar from "./components/Navbar";
-import HomeView from "./components/HomeView";
-import ServicesView from "./components/ServicesView";
+import { AnimatePresence, motion } from "motion/react";
+import { useState } from "react";
 import AboutView from "./components/AboutView";
-import ProjectsView from "./components/ProjectsView";
-import TeamView from "./components/TeamView";
-import ContactsView from "./components/ContactsView";
 import Background3D from "./components/Background3D";
-import { motion, AnimatePresence } from "motion/react";
+import ContactsView from "./components/ContactsView";
+import HomeView from "./components/HomeView";
+import Navbar from "./components/Navbar";
+import ProjectsView from "./components/ProjectsView";
+import ServicesView from "./components/ServicesView";
+import TeamView from "./components/TeamView";
+import { ActivePage } from "./types";
 
 export default function App() {
   const [activePage, setActivePage] = useState<ActivePage>("home");
 
   return (
     <div className="bg-hero-bg min-h-screen selection:bg-primary selection:text-primary-foreground font-sora relative">
-      
       {/* Global Persistent Interactive 3D Grid Background */}
       <Background3D />
 
@@ -53,15 +47,17 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 bg-primary rounded-full animate-ping" />
-            <span className="font-mono text-[10px] uppercase">SENTINEL AI // DIRECT_LOGS_ACTIVE</span>
+            <span className="font-mono text-[10px] uppercase">
+              SENTINEL AI // DIRECT_LOGS_ACTIVE
+            </span>
           </div>
 
           <p className="font-light text-center md:text-right">
-            &copy; 2026 SENTINEL AI, Inc. Security engineered correctly. Columbus, OH.
+            &copy; 2026 SENTINEL AI, Inc. Security engineered correctly.
+            Columbus, OH.
           </p>
         </div>
       </footer>
-
     </div>
   );
 }
