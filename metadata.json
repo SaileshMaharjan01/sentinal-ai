@@ -1,0 +1,8 @@
+{
+  "name": "Sentinel AI Landing Page",
+  "description": "Full-screen dark landing page with an embedded Spline 3D scene background for Sentinel AI, an AI-powered security company.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
